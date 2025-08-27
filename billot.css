@@ -17,6 +17,7 @@ header {
   align-items: center;
   padding: 20px 40px;
   border-bottom: 1px solid #ddd;
+  height: 100px;
 }
 .logo {
   font-size: 24px;
@@ -48,6 +49,7 @@ nav a {
 /* Listings */
 .listings {
   padding: 40px;
+  
 }
 .listings h2 {
   font-size: 24px;
@@ -86,13 +88,15 @@ nav a {
   background: white;
   border: 1px solid #ddd;
   border-radius: 40px;
-  padding: 8px;
+  margin-top: -100px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  width: 100%;
+  /* max-width: 800px; */
+  width: 900px;
   overflow: hidden;
    justify-content: center;
   align-items: center;
+  /* margin-top: 200px; */
+  margin-right: 200px;
 }
 
 .search-section {
@@ -165,6 +169,7 @@ nav a i {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  
  
 }
 .search-button i {
@@ -172,7 +177,7 @@ nav a i {
 }
 .hero {
   background: url('https://source.unsplash.com/1600x600/?travel') no-repeat center center/cover;
-  height: 60vh;
+  /* height: 60vh; */
   display: flex;
   flex-direction: column;
   justify-content: center; /* ← center content vertically */
@@ -513,3 +518,34 @@ footer {
 .tabs-section {
   position: relative; 
 }
+.carousel-controls {
+  display:flex;
+  gap: 10px;
+}
+
+.carousel-buttons {
+  background-color: #fff;
+  border:1px solid #e0e0e0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ cursor: pointer;
+}
+ .carousel-buttons svg {
+  width: 20px;
+  height: 20px;
+  color: #484848;
+ }
+ .carousel-container{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+ }
+ .carousel-track{
+  display: flex;
+  gap:20px;
+  padding: 20px 0;
+ }
